@@ -54,6 +54,19 @@ public class Reservation {
 			this.checkout = checkout;
 	}
 	
+	@Override
+	public String toString() {
+		return "Room"
+				+ roomnumber
+				+ ", check-in: "
+				+ df.format(checkin)
+				+ ", checkout: "
+				+ df.format(checkout)
+				+ ", "
+				+ duration()
+				+ " nights";
+	}
+	
 	
 	
 
